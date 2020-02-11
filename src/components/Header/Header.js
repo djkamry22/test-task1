@@ -24,7 +24,7 @@ function Header() {
                 </Container>
             </Navbar>
             <Switch>
-                <Route path="/projects" component={Projects}/>
+                <Route path="/projects/"  component={Projects}/>
                 <Route path="/team" component={Team}/>
                 <Route path="/" exact component={Home}/>
             </Switch>
