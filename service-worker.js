@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/guru-task/precache-manifest.4b82dd88d73e00b3a4f86a41c10ec3f6.js"
+  "/guru-task/precache-manifest.d00a806b8295d51ebed7a69e275a5c36.js"
 );
 
 self.addEventListener('message', (event) => {
