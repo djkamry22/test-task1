@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Container, Col, Row, Nav, Card} from "react-bootstrap";
+import {Container, Col, Row, Card} from "react-bootstrap";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import {getContributors} from "../../API/getData";
+import {NavLink} from "react-router-dom";
 
 function Team() {
     const [contributors, setContributors] = useState([])
@@ -28,12 +29,12 @@ function Team() {
                     {contributors.map(item => (
                         <Col md={4} sm={12} key={item.id}>
                             <Card style={{width: '20rem', marginTop: "30px"}}>
-                                <Nav.Link href="/projects">
+                                <NavLink to="/projects">
                                     <Card.Img src={item.avatar_url} style={{borderRadius: '50%', width: '75%', alignSelf: 'center'}}/>
                                     <Card.Body>
                                         <Card.Title>{item.login}</Card.Title>
                                     </Card.Body>
-                                </Nav.Link>
+                                </NavLink>
                             </Card>
                         </Col>
                     ))}
