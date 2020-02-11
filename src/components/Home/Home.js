@@ -17,7 +17,6 @@ function Home() {
                     </p>
                 </Col>
             </Row>
-
             <Row>
                 <Col>
                     <Button variant="primary">
@@ -31,11 +30,9 @@ function Home() {
                     </Button>{' '}
                 </Col>
             </Row>
-
             <Row style={{marginTop: '20px'}}>
                 <Col>
-                    <img style={{width: '60%'}} src="/img/bg1.jpg"/>
-
+                    <img style={{width: '60%'}} src="img/bg1.jpg"/>
                 </Col>
             </Row>
         </Container>
