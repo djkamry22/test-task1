@@ -27,16 +27,16 @@ function Team() {
                 <h1>OUR TEAM</h1>
                 <Row>
                     {contributors.map(item => (
-                        <Col md={4} sm={12} key={item.id}>
-                            <Card style={{width: '20rem', marginTop: "30px"}}>
-                                <NavLink to="/projects">
+                        <NavLink to="/projects">
+                            <Col md={4} sm={12} key={item.id}>
+                                <Card style={{width: '20rem', marginTop: "30px", alignContent: 'center'}}>
                                     <Card.Img src={item.avatar_url} style={{borderRadius: '50%', width: '75%', alignSelf: 'center'}}/>
                                     <Card.Body>
-                                        <Card.Title>{item.login}</Card.Title>
+                                        <Card.Title style={{textAlign: 'center', color: '#000'}}>{item.login}</Card.Title>
                                     </Card.Body>
-                                </NavLink>
-                            </Card>
-                        </Col>
+                                </Card>
+                            </Col>
+                        </NavLink>
                     ))}
                 </Row>
             </Container>
